@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+/* MENU BAR */
+.menu-bar {
+  background-color: rgb(3, 37, 67);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+li {
+  color: white;
+  font-size: large;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 30px;
+}
+.plus {
+  font-size: 30px;
+}
+.en {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 2px;
+  border-radius: 4px;
+}
+.en:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 37, 67);
+}
+/* COLOR FOR TMDB */
+.heading-first {
+  color: rgb(93, 170, 154);
+}
+.heading-second {
+  color: rgb(67, 191, 197);
+}
+.menu-oval {
+  border: none;
+  background-color: #1db8d7;
+  border-radius: 10px;
+
+  height: 18px;
+  width: 30px;
+}
+/* MOVIES HOVER */
+.movies-show {
+  position: relative;
+}
+.movies {
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  line-height: 20px;
+  top: 20px;
+  left: 0;
+  z-index: 10;
+}
+.movies:hover {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+/* SECOND SECTION */
+.second-wrapper {
+  background-image: url(pic1.jpg);
+  background-size: cover;
+  height: 17rem;
+  width: 100vw;
+  color: white;
+}
+.content {
+  margin: 0 2rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-width: 96vw;
+  position: relative;
+}
+.search {
+  display: flex;
+  margin-top: 4rem;
+}
+input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 30px;
+  padding: 8px;
+  font-size: large;
+}
+:focus {
+  outline: none;
+}
+
+.btn {
+  position: absolute;
+  margin: 0;
+  min-width: 100px;
+  height: 46px;
+  border: none;
+  border-radius: 30px;
+
+  right: 0;
+  background-color: rgb(21, 202, 198);
+  color: white;
+  font-size: 15px;
+}
+.btn:hover {
+  color: black;
+}
+
+/* WHATS POPULAR SECTION */
+.whats-popular-wrapper {
+  height: 25rem;
+  background-color: white;
+}
+.popular-content {
+  display: flex;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 2%;
+}
+button {
+  border: none;
+  background-color: white;
+  padding: 7px;
+  font-size: large;
+  border-radius: 20px;
+}
+.button {
+  margin-left: 2%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid rgb(3, 37, 65);
+}
+/* FOR BUTTOM ANIMATION */
+@keyframes changeButton {
+  0% {
+    background-color: white;
+  }
+
+  100% {
+    background-color: rgb(3, 37, 65);
+  }
+}
+.clicked {
+  background-color: rgb(3, 37, 65);
+  color: rgb(125, 183, 161);
+  animation-name: changeButton;
+  transition-duration: 1s;
+}
+/* FILMS AREA */
+.films-section {
+  /* margin: 2rem; */
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+img {
+  height: 230px;
+  width: 150px;
+  border-radius: 10px;
+}
+.films {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 0.8rem;
+}
+.bold {
+  font-weight: bold;
+  padding-top: 15px;
+}
+.circle-up {
+  height: 25px;
+  width: 25px;
+  background-color: gray;
+  color: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 80%;
+  top: 2%;
+  font-size: 13px;
+  text-align: center;
+}
+.circle-up:hover {
+  background-color: skyblue;
+  cursor: pointer;
+}
+.circle-down {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 100%;
+  border: 2px solid green;
+  text-align: center;
+  position: absolute;
+  left: 7%;
+  bottom: 15%;
+}
+.no {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}

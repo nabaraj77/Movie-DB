@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie DB</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <div class="menu-1">
+        <ul>
+          <li class="heading">
+            <span class="heading-first"
+              >TM<span class="heading-second">DB</span></span
+            >
+          </li>
+          <li class="menu-oval"></li>
+
+          <li
+            class="movies-show"
+            onmouseenter="myEnterFunction()"
+            onmouseleave="onMouseLeave()"
+          >
+            Movies
+            <div class="movies hidden" id="mov">
+              <p>Popular</p>
+              <p>Airing Today</p>
+              <p>On Tv</p>
+              <p>Top Rated</p>
+            </div>
+          </li>
+
+          <li>TV Shows</li>
+          <li>People</li>
+          <li>More</li>
+        </ul>
+      </div>
+
+      <div class="menu-2">
+        <ul>
+          <li class="plus">+</li>
+          <li class="en">EN</li>
+          <li>Login</li>
+          <li>Join TMDB</li>
+        </ul>
+      </div>
+    </div>
+    <!-- WELCOME BOX SECOND PART -->
+    <div class="second-wrapper">
+      <div class="content">
+        <h1 class="welcome">Welcome.</h1>
+        <h2>
+          Millions of movies, TV shows and people to discover. Explore now.
+        </h2>
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search for a movie,tv show,person....."
+          />
+          <button class="btn">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="whats-popular-wrapper">
+      <div class="popular-content">
+        <div class="popular"><h2>What's Popular</h2></div>
+        <div class="button">
+          <button class="on-tv clicked">On Tv</button>
+          <button class="in-threateres">In Threateres</button>
+        </div>
+      </div>
+      <div class="films-section">
+        <div class="films">
+          <a class="" href=""><img src="photo1.jpg" alt="film1" /></a>
+          <p class="circle-up">...</p>
+          <p class="circle-down"><span class="no">84%</span></p>
+          <p class="bold">The Boys</p>
+          <p class="italic">Jun 25,2021</p>
+        </div>
+        <div class="filmsAdded"></div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
