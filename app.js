@@ -16,7 +16,7 @@ let filmName = document.querySelector(".bold");
 let filmDate = document.querySelector(".italic");
 let filmsSection = document.querySelector(".films-section");
 let filmAdded = document.querySelector(".filmsAdded");
-console.log(filmAdded);
+//console.log(filmAdded);
 const films = (filmSrc, circleValue, film, date) => {
   //filmSrc = img;
   let html = `<div class="films">
@@ -50,3 +50,19 @@ function onMouseLeave() {
   let mov = document.getElementById("mov");
   mov.classList.add("hidden");
 }
+//VIDEOS SECTION
+let videos = document.querySelector(".videos-added");
+//console.log(videos);
+const videosAdd = (videoImage, videoName) => {
+  let html = `<div class="videos">
+  <img class="video-image" src=${videoImage} alt="Balidan" />
+  <p class="videos-text">
+    ${videoName}
+  </p>
+</div>`;
+  videos.insertAdjacentHTML("beforebegin", html);
+};
+videosAdd("videoii.jpg", "The Bob's Burgers Movie");
+videosAdd("video1.jpg", "The Bob's Burgers Movie");
+videosAdd("videoii.jpg", "The Bob's Burgers Movie");
+videosAdd("video1.jpg", "The Bob's Burgers Movie");
